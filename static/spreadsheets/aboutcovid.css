@@ -1,0 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
+#sidebar-wrapper{
+    position: sticky;
+    top:0px;
+    left: 0px;
+    height: 100vh;
+}

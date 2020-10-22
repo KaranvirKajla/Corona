@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="{% static '/spreadsheets/aboutcovid.css' %}">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">About Covid 19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/signout">Logout</a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/signin">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/auth/signup">Sign Up</a>
+              </li>
+          {% endif %}
+          </ul>
+
+        </div>
+      </nav>
+
+
+
+
+
+  
+  
+  
+  
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="list-group list-group-flush">
+        <a href="#overview" class="list-group-item list-group-item-action bg-light">Overview</a>
+        <a href="#preventions" class="list-group-item list-group-item-action bg-light">Preventions</a>
+        <a href="#symptoms" class="list-group-item list-group-item-action bg-light">Symptoms</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <h1 class="mt-4">Covid-19</h1>
+
+
+       
+       <div id="overview" class="sf_colsIn">
+       <strong>Overview</strong>
+                    <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.<o:p></o:p><br></p><p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.&nbsp; Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.<o:p></o:p><br></p><p>The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.&nbsp; </p><p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</p><p><o:p>At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.
+                </div>
+
+
+                <div id="preventions">
+            
+                        <strong>Prevention</strong>
+                 
+
+            <div class="sf_colsOut tabContent" data-sf-element="Tab contents" data-placeholder-label="Tab contents">
+                <div class="sf_colsIn">
+                    <p>To prevent infection and to slow transmission of COVID-19, do the following:
+</p><ul><li>Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.
+<br></li><li>Maintain at least 1 metre distance between you and people coughing or sneezing.
+<br></li><li>Avoid touching your face.
+<br></li><li>Cover your mouth and nose when coughing or sneezing.
+<br></li><li>Stay home if you feel unwell.
+<br></li><li>Refrain from smoking and other activities that weaken the lungs.
+<br></li><li>Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.
+        <br><br></li></ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="symptoms">
+                       <strong> Symptoms</strong>
+
+            <div class="sf_colsOut tabContent" data-sf-element="Tab contents" data-placeholder-label="Tab contents">
+                <div class="sf_colsIn">
+                    <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.<br></p><p>Most common symptoms:<br></p><ul><li>fever.</li><li>dry cough.</li><li>tiredness.</li></ul><p>Less common symptoms:<br></p><ul><li>aches and pains.</li><li>sore throat.</li><li>diarrhoea.</li><li>conjunctivitis.</li><li>headache.</li><li>loss of taste or smell.</li><li>a rash on skin, or discolouration of fingers or toes.</li></ul><p>Serious symptoms:</p><ul><li>difficulty breathing or shortness of breath.</li><li>chest pain or pressure.</li><li>loss of speech or movement.</li></ul><p>Seek immediate medical attention if you have serious symptoms.&nbsp; Always call before visiting your doctor or health facility.&nbsp;</p><p>People with mild symptoms who are otherwise healthy should manage their symptoms at home.&nbsp;</p><p>On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.&nbsp;</p><p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+
+
+
+      
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

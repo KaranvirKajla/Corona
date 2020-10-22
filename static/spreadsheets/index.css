@@ -1,0 +1,13 @@
+
+.card{
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.card:hover{
+    width: 180px;
+    height: 160px;
+    transition-duration: 500ms;
+}

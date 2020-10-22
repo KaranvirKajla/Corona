@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    text-align: center;
+    font-size: 150%;
+}
+.bigsize{
+    font-size: 1045%;
+}
+
+

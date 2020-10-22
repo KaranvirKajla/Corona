@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    
+        <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+    </style>
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+
+    <div style="overflow:hidden; height: 100vh; position: relative;">
+        <img  src="https://source.unsplash.com/1466x768/?healthcare" alt="healthcare">
+
+        <div class="container">
+            
+        <form action="/auth/signin/" method="POST" style="position: fixed;top:50%;width:50%; -ms-transform: translateY(-50%);
+        transform: translateY(-50%);">
+        {% csrf_token %}
+          <div class="form-group w-50">
+          <h2 style="text-align: center;">Login</h2>
+            <input name='email' type="email"class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email Address">
+          </div>
+            <div class="form-group w-50">
+              <input name="password" type="password"  class="form-control" id="password"
+              placeholder="Password">
+            </div>
+            <button style="width:100%" type="submit" class="btn btn-primary w-50">Login</button>
+
+            <div>
+              <a href="/auth/reset_password">Forgot Password?</a>
+            </div>
+            <div>
+              <a href="/auth/signup">Don't have an account?</a>
+            </div>
+          </form>
+        </div>
+
+        
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
